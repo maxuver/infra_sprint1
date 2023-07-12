@@ -21,10 +21,21 @@
 # Deploy the project to a remote server
 ***
  ### Connect to GitHub
-Install Git: ```sudo apt install git```
-Generate an SSH key pair: ```ssh-keygen```
-Save the public key to a gitHub account: ```cat .ssh/id_rsa.pub```
-Clone the project to a remote server: ```git clone git@github.com:Your_account/Project_name.git```  
+Install Git: 
+
+```sudo apt install git```
+
+Generate an SSH key pair: 
+
+```ssh-keygen```
+
+Save the public key to a gitHub account: 
+
+```cat .ssh/id_rsa.pub```
+
+Clone the project to a remote server: 
+
+```git clone git@github.com:Your_account/Project_name.git```  
 ***
 ### Start the backend
 Install the package manager and the virtual environment utility on the server:  
