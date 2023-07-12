@@ -11,7 +11,7 @@
 ***
 ## Installation on local server
 1. Clone the project from the repository:  
-```git clone git@github.com:maxuver/infra_sprint1.git``.
+```git clone git@github.com:maxuver/infra_sprint1.git```.
 2. Set up a virtual environment:  
 ```python3 -m venv venv```.
 3. Install dependencies:  
