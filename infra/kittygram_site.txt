@@ -1,0 +1,5 @@
+IP: 158.160.76.223 ;
+name_taski: https://patsyuk.servemp3.com ;
+name_kittygram: https://kittygram.myvnc.com ;
+login: max ;
+password: max ;
