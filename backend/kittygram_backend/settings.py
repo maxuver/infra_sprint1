@@ -15,6 +15,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['158.160.76.223', '127.0.0.1', 'localhost', 'kittygram.myvnc.com']
 
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -95,12 +96,13 @@ USE_L10N = True
 
 USE_TZ = True
 
+STATIC_URL = '/static_backend/'
 
-STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/var/www/kittygram/media/'
-# MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = BASE_DIR / '/var/www/kittygram/media/'
+
+STATIC_ROOT = BASE_DIR / 'static_backend'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
