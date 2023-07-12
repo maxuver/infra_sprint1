@@ -1,10 +1,10 @@
 # Kittygram
 ***
-## Kittygram is a project for photo sharing
+## Kittygram is a project for photo sharing - https://kittygram.myvnc.com
 ***
-## Technology
-## Python 3.10
-## Django3
+## Technology:
+* Python 3.10
+* Django3
 * Nginx
 * Gunicorn
 * React
