@@ -61,21 +61,14 @@ class CatSerializer(serializers.ModelSerializer):
     def get_age(self, obj):
         return dt.datetime.now().year - obj.birth_year
     
-  def create(self, validated_data):
-    cat = Cat.objects.create(**validated_data)
-    if 'achievements' not in self.initial_data:
+    def create(self, validated_data):
+        cat = Cat.objects.create(**validated_data)
+        if 'achievements' in self.initial_data:
+            achievements = validated_data.pop('achievements')
+            for achievement in achievements:
+                current_achievement, status = Achievement.objects.get_or_create(**achievement)
+                AchievementCat.objects.create(achievement=current_achievement, cat=cat)
         return cat
-    else:
-        achievements = validated_data.pop('achievements')
-        for achievement in achievements:
-            current_achievement, status = Achievement.objects.get_or_create(
-                **achievement
-                    )
-            AchievementCat.objects.create(
-                achievement=current_achievement, cat=cat
-                    )
-        return cat
-
     
     def update(self, instance, validated_data):
         instance.name = validated_data.get('name', instance.name)
