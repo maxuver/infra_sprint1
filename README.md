@@ -163,9 +163,4 @@ Configure automatic SSL certificate renewal:
 ### Setting up monitoring and collecting errors
 
 Register on the site <small>[Uptimerobot](https://uptimerobot.com/).  
-After that, on the main dashboard click the green button ***Add New Monitor***, in the opened window specify the monitor type: HTTP(s), come up with a name for this monitor, enter the URL you want to monitor.  
-
-
-Author of the project | My website
-------------- | -------------
-[maxuver](https://github.com/maxuver) | <small>[maximpatsyuk.com](https://maximpatsyuk.com)
+After that, on the main dashboard click the green button ***Add New Monitor***, in the opened window specify the monitor type: HTTP(s), come up with a name for this monitor, enter the URL you want to monitor.
